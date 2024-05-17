@@ -1,0 +1,1302 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>firstVIEW</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/bootstrap.js"></script>
+
+<link rel="stylesheet" href="css/firstview2015.css">
+
+<style>
+.dropdown-menu li > a, .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+	background-image: none;
+	background-color:#FFF;
+	text-align:left;
+	font-size:12px;
+}
+</style>
+
+<script>
+
+function showsearch(){
+	//	$('.fvnav').hide();
+	//	$('#searchbox_designer').show();
+
+	if($('#searchbox_designer').is(':visible')) {
+    		// Code
+		hidesearch();
+		return;
+	}
+
+	$('.fvnav').css('visibility', 'hidden');
+	$('#searchbox_designer').css('visibility', 'visible');
+	$('#searchbox_designer').show();
+
+}
+
+function hidesearch(){
+	//	$('#searchbox_designer').hide();
+	//	$('.fvnav').show();
+
+	$('#searchbox_designer').css('visibility', 'hidden');
+	$('#searchbox_designer').hide();
+	$('.fvnav').css('visibility', 'visible');
+}
+
+</script>
+
+</head>
+<body>
+<style>
+
+
+        .navbar-nav>li>a{
+                padding:15px 15px;
+                margin:15px 15px;
+
+        }
+
+@media screen and (min-width: 769px) {
+    /* Styles go here */
+
+	.navbar-nav>li>a{
+		padding:0 1px;
+		margin:0 1px;
+
+	}
+	.b-right{
+		 border-right:1px solid #666;
+                 max-width:170px;
+	}
+
+
+}
+
+
+.navbar-nav>li>a{
+padding:0 10px;
+margin:0 10px;
+
+}
+</style>
+<div style="max-width:1000px;overflow:hidden; margin-left: auto; margin-right: auto;"><!-- begin page wrapper -->
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default navbar-custom" id="mainnavbar" style="margin-bottom:0;">
+        <div class="container-fluid">
+          <div class="navbar-header  text-center">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./"><img src="//firstview.com/themes/default/images/logo75pc.gif" /></a>
+          </div>
+          <br clear="all">
+          <div id="navbar" class="navbar-collapse collapse navbar-custom">
+            <ul class="nav navbar-nav navbar-custom" style="margin-top:15px;">
+              <li style="margin:2px 0px;><span class="d-none d-md-block">FASHION SHOWS:</span></li>
+	      <li class="fvnav b-right" style=""><a href="/collection.php">PHOTOGRAPHS</a></li>
+	      <li class="fvnav"><a href="/collection_videos_designers.php">VIDEO</a></li>
+              <li class="fvnav"><a href="/streetstyle.php"> STREETSTYLE</a></li>
+              <li class="fvnav" class="hidden-xs hidden-sm"><a href="/services.php"> OUR SERVICES</a></li>
+ 			  <li class="fvnav"><a href="/contact.php"> CONTACT US</a></li>
+
+             <!-- <li><a href="#/" onclick="openlogin();">LOGIN</a></li> -->
+
+
+<li>
+            <!-- begin searchbox designer -->
+            <div id="searchbox_designer" style="text-align:right;display:none;">
+				<form name="fvbegin" action="alpha_list.php" method="GET" class="form-inline">
+				<div id="fvkeywordsearch123" style="margin-bottom:3px;">
+				<!-- <a href="#/" onclick="hidesearch();" style="font-size:18px;"><span class="glyphicon glyphicon-remove"  aria-hidden="true"></span></a> -->
+					<input type="hidden" name="type" value="designer">
+					<input type="hidden" name="deslist" value="1">
+					<input class="sort form-control" type="text" name="s" placeholder="  SEARCH PHOTOGRAPHS BY DESIGNER" value="" style="width:395px;height:28px;margin-top:4px;padding:0;">
+
+				</div>
+				</form>
+            </div>
+            <!-- end searchbox designer -->
+</li>
+
+
+
+              <li>
+              <div style="width:40px;height:36px;padding-top:0px;display:inline-block;margin-top:-2px;overflow:hidden;" class="hidden-xs hidden-sm">
+ 				<a href="#/" onclick="showsearch();"><span class="glyphicon glyphicon-search" style="font-size:20px;" aria-hidden="true"></span></a>
+				
+      <!---        <a href="http://www.facebook.com/pages/FirstVIEW/107589219341902" target="firstVIEW on Facebook"><img src="//firstview.com/themes/default/images/facebook-bw.jpg" width="16" height="20" border="0" style="margin-top:-5px;"></a>&nbsp; <a href="http://twitter.com/firstviewphoto" target="firstVIEW on Twitter"><img src="//firstview.com/themes/default/images/twitter-bw.jpg" width="16" height="20" border="0" style="margin-top:-5px;"></a>&nbsp;
+<a href="http://pinterest.com/firstviewphoto" target="firstVIEW on Pinterest"><img src="/themes/default/images/pinterest-16x20.jpg" width="16" height="20" border="0" style="margin-top:-5px;"></a>&nbsp;
+<a href="http://instagram.com/firstviewphoto" target="firstVIEW on Instagram"><img src="/themes/default/images/instagram-16x20.jpg" width="16" height="20" border="0" style="margin-top:-5px;"></a>&nbsp;  -->
+              </div>
+              </li>
+            </ul>
+
+
+
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+
+<!-- BEGIN SEARCH FILTER NAV -->
+
+<nav class="navbar navbar-default hidden-sm hidden-md hidden-lg" role="navigation" id="searchfiltersnav">
+<div style="float:left;width:100%;">
+<button type="button" class="navbar-toggle btn btn-sm" data-toggle="collapse" data-target="#searchfilters" >Search Filters</button>
+<p class="pageTitle" style="font-size:11px;padding-top:20px;"><a href="/collection.php?menu=1&clear=1">FASHION SHOWS: PHOTOGRAPHS<br clear="all" />DESIGNERS &amp; COLLECTIONS </a><b>  : Women</b></p>
+
+</div>
+    <div class="collapse navbar-collapse" id="searchfilters" style="padding-top:4px;">
+    <form class="form-inline" role="search" action="collection_results.php">
+		<input type="hidden" name="s_g" value="Women">
+
+<!-- SEARCH FILTERS -->
+
+<div class="form-group">
+<label for="filter_year" class="control-label col-xs-5">Year:</label>
+    <select id="filter_year" name="filter_year" class="form-control" style="width:150px;">
+	    <option value="" selected="selected">All</option>
+<option value="2025">2025</option>
+<option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option>
+	</select>
+</div>
+
+
+
+<div class="form-group">
+<label for="filter_season"  class="control-label col-xs-5">Season:</label>
+	<select name="filter_season" id="filter_season"  style="width:150px;" class="form-control">
+		<option value="" selected="selected">All</option>
+
+		<option value="2">Spring / Summer</option>
+		<option value="5">Prefall</option>
+		<option value="1">Fall / Winter</option>
+		<option value="3">Cruise</option>
+	</select>
+</div>
+
+
+
+<div class="form-group">
+<label for="l" class="control-label col-xs-5">Designer:</label>
+	<select name="l" id="l" class="form-control" style="width:150px;">
+	<option value="" selected="selected">All</option>
+	<option value="A">A</option>
+	<option value="B">B</option>
+	<option value="C">C</option>
+	<option value="D">D</option>
+	<option value="E">E</option>
+	<option value="F">F</option>
+	<option value="G">G</option>
+	<option value="H">H</option>
+	<option value="I">I</option>
+	<option value="J">J</option>
+	<option value="K">K</option>
+	<option value="L">L</option>
+	<option value="M">M</option>
+	<option value="N">N</option>
+	<option value="O">O</option>
+	<option value="P">P</option>
+	<option value="Q">Q</option>
+	<option value="R">R</option>
+	<option value="S">S</option>
+	<option value="T">T</option>
+	<option value="U">U</option>
+	<option value="V">V</option>
+	<option value="W">W</option>
+	<option value="X">X</option>
+	<option value="Y">Y</option>
+	<option value="Z">Z</option>
+</select>
+</div>
+
+
+
+<div class="form-group">
+<label for="type" class="control-label col-xs-5">Collection Type:</label>
+
+  <select name="s_t" id="type" style="width:150px;" class="form-control">
+	<option value="">All</option>
+
+
+	<option value="7">Runway Collection</option>
+	<option value="4">Runway Details</option>
+	<option value="11">Runway Atmosphere</option>
+
+	<option value="3">Backstage Beauty and Fashion</option>
+
+	<option value="8">Lookbook</option>
+ 						<option value="5">Bridal Collection</option></select>
+</div>
+
+
+<div class="form-group">
+<label for="place" class="control-label col-xs-5">Country-City:</label>
+
+<select name="s_p" id="place" class="form-control" style="width:150px;">
+	<option value="">All</option>
+	<option value="12">Australia - Melbourne</option>
+	<option value="4">Australia - Sydney</option>
+	<option value="20">Bali - Bali</option>
+	<option value="33">Brazil - Belo Horizonte</option>
+	<option value="19">Brazil - Rio De Janeiro</option>
+	<option value="7">Brazil - Sao Paulo</option>
+	<option value="36">Canada - Toronto</option>
+	<option value="3">China - Beijing</option>
+	<option value="17">China - Hong Kong</option>
+	<option value="32">Denmark - Copenhagen</option>
+	<option value="15">England - London</option>
+	<option value="1">France - Paris</option>
+	<option value="21">Germany - Berlin</option>
+	<option value="26">India - India</option>
+	<option value="24">Italy - Florence</option>
+	<option value="8">Italy - Milan</option>
+	<option value="35">Italy - Rome</option>
+	<option value="18">Japan - Tokyo</option>
+	<option value="13">Korea - Seoul</option>
+	<option value="11">Malaysia - Kuala Lumpur</option>
+	<option value="22">Mexico - Mexico City</option>
+	<option value="31">Netherlands - Amsterdam</option>
+	<option value="14">New Zealand - Auckland</option>
+	<option value="38">Oman - Muscat</option>
+	<option value="5">Russia - Moscow</option>
+	<option value="29">Singapore - Singapore</option>
+	<option value="9">Spain - Barcelona</option>
+	<option value="16">Spain - Madrid</option>
+	<option value="37">Spain - Valencia</option>
+	<option value="34">Sweden - Stockholm</option>
+	<option value="30">Thailand - Bangkok</option>
+	<option value="6">USA - Los Angeles</option>
+	<option value="23">USA - Miami</option>
+	<option value="2">USA - New York</option>
+</select>
+</div>
+
+
+
+<div class="form-group">
+<label for="nature" class="control-label col-xs-5">Couture / RTW / Swim:</label>
+<select name="s_n" id="nature" class="form-control" style="width:150px;">
+	<option value="">All</option>
+	<option value="1">Ready-to-Wear</option>
+	<option value="2">Haute Couture</option>
+	<option value="3">Swim</option>
+</select>
+</div>
+
+<div class="form-group">
+<input class="submit" type="submit" value="&nbsp;&nbsp;SEARCH&nbsp;&nbsp;" id="cdbutton" class="btn btn-default">
+&nbsp;&nbsp;
+<input class="submit" type="button" onclick="location.href='collection_results.php?s_g=Men&amp;b=date&amp;clear=1'" value="&nbsp;&nbsp;RESET&nbsp;&nbsp;" id="cdbutton" class="btn btn-default">
+
+</div>
+
+
+
+
+</form>
+<!-- END SEARCH FILTERS -->
+</div>
+
+
+</nav>
+
+<!-- END SEARCH FILTER NAV -->
+
+
+
+
+<!-- NORMAL SEARCH FILTERS -->
+<div style='text-align:center;'>
+<div class="container hidden-xs" id="normalfilters" >
+
+<h1 class="pageTitle">FASHION SHOWS: PHOTOGRAPHS - DESIGNERS &amp; COLLECTIONS <b>  : Women</b></h1>
+<div class="ruler"></div>
+<p class="collection_menu_title"><a href="alpha_list.php?type=designer&amp;deslist=1">SEARCH DESIGNERS BY NAME</a></p>
+<p class="collection_menu_title"><b><a href="collection_results.php?s_g=Women&amp;b=date&amp;clear=1">BROWSE WOMEN'S COLLECTIONS BY DATE</a></b></p>
+<p class="collection_menu_title"><a href="collection_results.php?s_g=Men&amp;b=date&amp;clear=1">BROWSE MEN'S COLLECTIONS BY DATE</a></p>
+<p class="collection_menu_title"><a href="/collection_atmosphere_results.php"><b>NEW:</b> BROWSE RUNWAY ATMOSPHERE</a></p>
+
+<div id="cd_sort" class="hidden-xs" >
+		<form action="collection_results.php">
+		<input type="hidden" name="s_g" value="Women">
+
+<div id="cd_sort_row1">
+		          <b>Search by:</b> &nbsp;&nbsp;Year <select id="filter_year" name="filter_year" class="selectsearch ">
+		                    <option value="" selected="selected">All</option>
+							<option value="2025">2025</option>
+<option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option>
+					</select>
+
+		              &nbsp;&nbsp;&nbsp; Season: <select name="filter_season" id="filter_season" style="width:50px;" class="selectsearch ">
+						                        <option value="" selected="selected">All</option>
+						                        <option value="2">Spring / Summer</option>
+						                        <option value="5">Prefall</option>
+						                        <option value="1">Fall / Winter</option>
+						                        <option value="3">Cruise</option>
+		                    </select>
+
+		             &nbsp;&nbsp;  Designer Name: <select name="l" id="l" class="selectsearch ">
+						                        <option value="" selected="selected">All</option>
+
+<option value="A">A</option>
+<option value="B">B</option>
+<option value="C">C</option>
+<option value="D">D</option>
+<option value="E">E</option>
+<option value="F">F</option>
+<option value="G">G</option>
+<option value="H">H</option>
+<option value="I">I</option>
+<option value="J">J</option>
+<option value="K">K</option>
+<option value="L">L</option>
+<option value="M">M</option>
+<option value="N">N</option>
+<option value="O">O</option>
+<option value="P">P</option>
+<option value="Q">Q</option>
+<option value="R">R</option>
+<option value="S">S</option>
+<option value="T">T</option>
+<option value="U">U</option>
+<option value="V">V</option>
+<option value="W">W</option>
+<option value="X">X</option>
+<option value="Y">Y</option>
+<option value="Z">Z</option>
+</select>
+   &nbsp;&nbsp;
+
+		               Collection Type: <select name="s_t" id="type" style="width:160px;" class="selectsearch ">
+                        <option value="">All</option>
+
+                         <option value="7">Runway Collection</option>
+                         <option value="4">Runway Details</option>
+						 <option value="11">Runway Atmosphere</option>
+
+                         <option value="3">Backstage Beauty and Fashion</option>
+              		     <option value="8">Lookbook</option>
+
+
+ 						<option value="5">Bridal Collection</option> 						                    </select>
+
+
+<!-- div style="width:600px;margin-top:5px;margin-bottom:5px;padding-left:45px;" -->
+
+</div>
+<!-- end cd_sort_row1 -->
+<div id="cd_sort_row2">
+
+		           Country-City: <select name="s_p" id="place" class="selectsearch " style="width:150px;">
+                        <option value="">All</option>
+                        <option value="12">Australia - Melbourne</option>
+                        <option value="4">Australia - Sydney</option>
+                        <option value="20">Bali - Bali</option>
+                        <option value="33">Brazil - Belo Horizonte</option>
+                        <option value="19">Brazil - Rio De Janeiro</option>
+                        <option value="7">Brazil - Sao Paulo</option>
+                        <option value="36">Canada - Toronto</option>
+                        <option value="3">China - Beijing</option>
+                        <option value="17">China - Hong Kong</option>
+                        <option value="32">Denmark - Copenhagen</option>
+                        <option value="15">England - London</option>
+                        <option value="1">France - Paris</option>
+                        <option value="21">Germany - Berlin</option>
+                        <option value="26">India - India</option>
+                        <option value="24">Italy - Florence</option>
+                        <option value="8">Italy - Milan</option>
+                        <option value="35">Italy - Rome</option>
+                        <option value="18">Japan - Tokyo</option>
+                        <option value="13">Korea - Seoul</option>
+                        <option value="11">Malaysia - Kuala Lumpur</option>
+                        <option value="22">Mexico - Mexico City</option>
+                        <option value="31">Netherlands - Amsterdam</option>
+                        <option value="14">New Zealand - Auckland</option>
+                        <option value="38">Oman - Muscat</option>
+                        <option value="5">Russia - Moscow</option>
+                        <option value="29">Singapore - Singapore</option>
+                        <option value="9">Spain - Barcelona</option>
+                        <option value="16">Spain - Madrid</option>
+                        <option value="37">Spain - Valencia</option>
+                        <option value="34">Sweden - Stockholm</option>
+                        <option value="30">Thailand - Bangkok</option>
+                        <option value="6">USA - Los Angeles</option>
+                        <option value="23">USA - Miami</option>
+                        <option value="2">USA - New York</option>
+                    </select>
+
+
+
+&nbsp;&nbsp;
+Couture / RTW / Swim: <select name="s_n" id="nature" class="selectsearch ">
+                        <option value="">All</option>
+                        <option value="1">Ready-to-Wear</option>
+                        <option value="2">Haute Couture</option>
+                        <option value="3">Swim</option>
+                    </select>
+
+&nbsp;&nbsp;
+<input class="submit btn btn-default" style="height:30px;padding-bottom:2px;padding-top:1px;" type="submit" value="&nbsp;&nbsp;SEARCH&nbsp;&nbsp;" id="cdbutton"   >
+&nbsp;&nbsp;
+<input class="submit btn btn-default" style="height:30px;padding-bottom:2px;padding-top:1px;" type="button" onclick="location.href='collection_results.php?s_g=Men&amp;b=date&amp;clear=1'" value="&nbsp;&nbsp;RESET&nbsp;&nbsp;" id="cdbutton" >
+
+</div>
+<!-- end cd_sort_row2 -->
+	<!-- /div -->
+</form>
+</div>
+</div>
+</div>
+<!-- END NORMAL SEARCH FILTERS -->
+<br clear="all">
+
+<!-- Main component for a primary marketing message or call to action -->
+<div class="container" id="resultscontainer">
+<!-- BEGIN MAIN CONTENT -->
+
+<div id="cd_results" style="text-align:left;">46810 results - 2341 page(s)</div>
+
+
+
+ <div class="row" style="max-width:825px;">
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55353" title="55353"><strong>Idan Cohen</strong> - <span class="seasonX">Spring / Summer 2025</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Bridal Collection</span>, <span class="place">New York</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55355" title="55355"><strong>Idan Cohen</strong> - <span class="seasonX">Spring / Summer 2025</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Backstage Beauty and Fashion</span>, <span class="place">New York</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55352" title="55352"><strong>Ines Di Santo</strong> - <span class="seasonX">Spring / Summer 2025</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Bridal Collection</span>, <span class="place">New York</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55354" title="55354"><strong>Ines Di Santo</strong> - <span class="seasonX">Spring / Summer 2025</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Backstage Beauty and Fashion</span>, <span class="place">New York</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55210" title="55210"><strong>Acne</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Details</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55211" title="55211"><strong>Acne</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55249" title="55249"><strong>Akris</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Details</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55253" title="55253"><strong>Akris</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55155" title="55155"><strong>Alberta Ferretti</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Milan</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55247" title="55247"><strong>Ann Demeulemeester</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55261" title="55261"><strong>Ann Demeulemeester</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Details</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55132" title="55132"><strong>Annies Ibiza</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">London</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55251" title="55251"><strong>Balenciaga</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55303" title="55303"><strong>Balenciaga</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Atmosphere</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55185" title="55185"><strong>Bally</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Milan</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55212" title="55212"><strong>Balmain</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Details</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55213" title="55213"><strong>Balmain</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55217" title="55217"><strong>Balmain</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Details</span>, <span class="place">Paris</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55190" title="55190"><strong>Bottega Veneta</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Collection</span>, <span class="place">Milan</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+
+
+<div class="col-sm-6">
+<!-- BEGIN RESULTS LISTING HERE --->
+<div class="fresult">
+			<div class="ruler"></div>
+
+			<div class="collecListInfo">
+				<h3 class="collectTitle"><a href="collection_images.php?id=55192" title="55192"><strong>Bottega Veneta</strong> - <span class="seasonX">Fall / Winter 2024</span> - <span class="gender">Women</span></a></h3>
+				<p class="collecInfo"><span class="nature">Ready-to-Wear</span>, <span class="type">Runway Details</span>, <span class="place">Milan</span></p>
+			</div>
+</div>
+<!-- END RESULTS LISTING HERE --->
+</div>
+
+
+</div>
+<div class="row">
+</div>
+
+
+
+ <div class="row">
+ <div class="col-sm-6">
+
+</div>
+</div>
+
+<br clear="all">
+
+
+		<div class="ruler"></div>
+
+
+<div class="pages">
+PAGE <b>1</b> of <b>2341</b>:
+
+ <A class="resultlink" href="collection_results.php?page=0&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">&lt;&lt;</a>  <A class="resultlink" href="#"><b><font size=2>1</font></b></a>  <A class="resultlink" href="collection_results.php?page=1&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">2</a>  <A class="resultlink" href="collection_results.php?page=2&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">3</a>  <A class="resultlink" href="collection_results.php?page=3&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">4</a>  <A class="resultlink" href="collection_results.php?page=4&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">5</a>  <A class="resultlink" href="collection_results.php?page=5&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">6</a>  <A class="resultlink" href="collection_results.php?page=6&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">7</a>  <A class="resultlink" href="collection_results.php?page=7&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">8</a>  <A class="resultlink" href="collection_results.php?page=8&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">9</a>  <A class="resultlink" href="collection_results.php?page=9&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">10</a>  <A class="resultlink" href="collection_results.php?page=10&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">more pages...</a>   <A class="resultlink" href="collection_results.php?page=2340&filter_year=&filter_season=&s_t=&s_p=&s_g=Women&s_n=&l=">&gt;&gt;</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+
+<br clear="all">
+
+
+
+
+
+
+
+<!-- END MAIN CONTENT -->
+
+</div>
+
+
+
+
+<br clear="all">
+<br><br>
+
+<!-- begin bottom content -->
+
+<!-- begin bottom content -->
+
+<div id="container text-center">
+
+<div class="container-fluid">
+  <div class="row text-center" style="text-align:center;">
+
+<!-- social links BEGIN -->
+		<div class="align-center" style="width:240px;margin-left:auto;margin-right:auto;">
+
+		<a class="footer" href="https://www.instagram.com/firstviewphoto/" target="_blank"><img src="http://firstview.com/themes/default/images/instagram-logo.png"></a>&nbsp;&nbsp;
+
+		<a class="footer" href="https://www.facebook.com/firstviewphoto/" target="_blank"><img src="http://firstview.com/themes/default/images/facebook-logo.png"></a>&nbsp;&nbsp;
+
+		<a class="footer" href="https://www.tiktok.com/@firstviewphoto" target="_blank"><img src="http://firstview.com/themes/default/images/tiktok-logo.png"></a>&nbsp;&nbsp;
+
+		<a class="footer" href="https://www.xiaohongshu.com/user/profile/5f8c513c000000000100a598" target="_blank"><img src="http://firstview.com/themes/default/images/xiao-logo.png"></a>
+		</div>
+	
+<!-- social links END -->
+
+
+					<a class="footer" href="index.php"> &copy;  firstVIEW</a> <span style='font-size:10px;color:#666;' >2024</span><br />
+					<a class="footer" href="legal.php" title="Legal information">Legal and Privacy information</a>
+
+
+
+  </div>
+</div>
+</div> <!-- end container -->
+
+<br clear="all">
+
+</div> <!-- end entire page wrapper -->
+
+<!-- end bottom content -->
+
+<script>
+function openlogin(){
+
+	$('#loginModal').modal({show:true});
+	$('#registerModal').modal('hide');
+	$('#forgotpassModal').modal('hide');
+
+}
+
+function openforgotpass(){
+
+	$('#forgotpassModal').modal({show:true});
+	$('#loginModal').modal('hide');
+	$('#registerModal').modal('hide');
+
+}
+
+function openregister(){
+
+	$('#registerModal').modal({show:true});
+	$('#loginModal').modal('hide');
+	$('#forgotpassModal').modal('hide');
+
+}
+
+
+function fv_login(){
+
+//alert($("#loginform").serialize())	;
+
+		$.ajax({ // create an AJAX call...
+		        data: $("#loginform").serialize(), // get the form data
+		        type: "POST", // GET or POST
+		        url: "includes/ss_login.php", // the file to call
+		        success: function(response) { // on success..
+				      	if(response.trim() == '1'){
+								location.reload(true);
+							}
+							else{
+							   alert(response);
+							}
+		            //$('#created').html(response); // update the DIV
+		        }
+		    });
+
+}
+
+function fv_register(){
+
+		$.ajax({ // create an AJAX call...
+		        data: $("#registerform").serialize(), // get the form data
+		        type: "POST", // GET or POST
+		        url: "includes/ss_register.php", // the file to call
+		        success: function(response) { // on success..
+							if(response.trim() == '1'){
+								location.reload(true);
+							}
+							else{
+							   alert(response);
+							}
+
+
+		            //$('#created').html(response); // update the DIV
+		        }
+		    });
+
+}
+
+
+function fv_saveaccount(){
+
+		$.ajax({ // create an AJAX call...
+		        data: $("#accountform").serialize(), // get the form data
+		        type: "POST", // GET or POST
+		        url: "includes/ss_saveaccount.php", // the file to call
+		        success: function(response) { // on success..
+							if(response.trim() == '1'){
+								//location.reload(true);
+								alert('Your information has been updated.');
+							}
+							else{
+							   alert(response);
+							}
+
+
+		            //$('#created').html(response); // update the DIV
+		        }
+		    });
+
+}
+
+function removefavorites(){
+
+		$.ajax({ // create an AJAX call...
+		        data: $("#imagelistingform").serialize(), // get the form data
+		        type: "POST", // GET or POST
+		        url: "includes/ss_deletefavorite.php", // the file to call
+		        success: function(response) { // on success..
+							if(response.trim() == '1'){
+								location.reload(true);
+								//alert('Your information has been updated.');
+							}
+							else{
+							   alert(response);
+							}
+
+
+		            //$('#created').html(response); // update the DIV
+		        }
+		    });
+
+
+}
+
+function purchaseimages(){
+
+		var data = $("#imagelistingform").serialize();
+		//alert('hello');
+		//alert(data);
+		//alert ("./purchase.php?" + data);
+		window.location.replace("./purchase.php?" + data);
+
+		//window.location.href = "purchase.php?" . data;
+}
+
+
+function fv_logout(){
+
+		$.ajax({ // create an AJAX call...
+		        data: '', // get the form data
+		        type: "POST", // GET or POST
+		        url: "includes/ss_logout.php", // the file to call
+		        success: function(response) { // on success..
+							if(response.trim() == '1'){
+								location.reload(true);
+							}
+							else{
+							   alert(response);
+							}
+
+
+		            //$('#created').html(response); // update the DIV
+		        }
+		    });
+
+}
+
+
+function fv_forgotpass(){
+
+		$.ajax({ // create an AJAX call...
+		        data: $("#forgotpassform").serialize(), // get the form data
+		        type: "POST", // GET or POST
+		        url: "includes/ss_forgotpass.php", // the file to call
+		        success: function(response) { // on success..
+							if(response.trim() == '1'){
+								//location.reload(true);
+								$('#forgotpass_response').html("<h3>Thanks! Your password is on its away.</h3><br><a href='#/' onclick='openlogin();'>Click Here To Login</a>");
+
+							}
+							else{
+							   alert(response);
+							}
+
+
+		            //$('#created').html(response); // update the DIV
+		        }
+		    });
+
+
+
+}
+
+
+$(function() {
+
+  $('#addfavoriteslink').popover({
+    html: true,
+    trigger: 'manual',
+    placement: 'bottom',
+    content: function() {
+      return $.ajax({url: 'includes/ss_addfavorite.php',
+      		        data: $("#imagelistingform").serialize(), // get the form data
+		       		type: "POST", // GET or POST
+                     dataType: 'html',
+                     async: false}).responseText;
+    }
+  }).click(function(e) {
+    $(this).popover('toggle');
+  });
+
+
+
+
+	$('body').on('click', function (e) {
+		$('.favinfo').each(function () {
+			//the 'is' for buttons that trigger popups
+			//the 'has' for icons within a button that triggers a popup
+			if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+				$(this).popover('hide');
+			}
+		});
+	});
+
+
+
+});
+
+
+
+</script>
+
+<!-- MODAL LOGIN -->
+
+
+<div class="modal" id="loginModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Login to firstView</h4>
+        </div>
+        <div class="modal-body">
+        <div id="login_response">
+          <form name="login" action="login.php?action=login" method="post" id="loginform">
+	<div class="login">
+
+				Logging in with firstVIEW allows you to create and save images in your own "add to favorites" folder.
+        <!--
+		<p>Your password is for your personal use only. Do NOT let anyone else use your password.
+		If more than one person uses the same password our system will automatically cancel your password.</p>-->
+
+<br clear="all"><br>
+
+		<p><label for="email">Email :</label><input type="text" name="username" id="login_email" class="form-control"></p>
+		<p><label for="passwd">Password :</label><input type="password" name="password" id="login_passwd" class="form-control"></p>
+
+		<div class="clearboth"></div>
+
+		<div class="submit">
+		<input type="button" class="btn btn-default" value="&nbsp;LOGIN&nbsp;" onclick="fv_login();"></div>
+<br clear="all"><br>
+        <p><a href="#/" onclick="openforgotpass();">Forgot your password?</a></p>
+
+       <p><a href="#/" onclick="openregister();" class="btn btn-warning">Not Registered? Click Here.</a></p>
+
+
+	</div>
+	</form>
+	</div>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn btn-danger">Cancel</a>
+
+        </div>
+      </div>
+    </div>
+</div>
+<!-- END MODAL LOGIN -->
+
+
+
+<!-- MODAL REGISTER -->
+
+
+<div class="modal" id="registerModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Register for firstView</h4>
+        </div>
+        <div class="modal-body">
+
+<div id="register_response">
+<form name="form_subscribe" action="subscribe.php?action=check_info" method="post" id="registerform">
+
+		<div class="subinfo">
+			<p>Registering with firstVIEW allows you to create and save images in your own “add to favorites�?folder.</p>
+		</div>
+	<div class="clearboth">&nbsp;</div>
+	<div class="subscribe">
+
+				<p><label for="firstname">First name</label><input type="text" name="firstname" id="firstname" class="form-control"></p>
+				<p><label for="name">Last name</label><input type="text" name="name" id="name" class="form-control"></p>
+				<p><label for="email">Email = Login</label><input type="text" name="username" id="email" class="form-control"></p>
+				<p><label for="passwd">Choose password</label><input type="password" name="password" id="passwd" class="form-control"></p>
+				<p><label for="passwd2">Confirm password</label><input type="password" name="password2" id="passwd2" class="form-control"></p>
+				<p><label for="phone">Phone number</label><input type="text" name="phone" id="phone" class="form-control"></p>
+				<div class="clearboth"></div>
+				<div class="submit"><input type="button" value="Register" style="border:solid #666 1px; padding:5px;" class="btn btn-default" onclick="fv_register();"></div>
+	</div>
+	</form>
+</div>
+
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn btn-danger">Close</a>
+
+        </div>
+      </div>
+    </div>
+</div>
+<!-- END MODAL REGISTER -->
+
+
+<!-- MODAL FORGOTPASS -->
+
+
+<div class="modal" id="forgotpassModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Forgot Password</h4>
+        </div>
+        <div class="modal-body">
+        <div id="forgotpass_response">
+          <form name="login" action="login.php?action=login" method="post" id="forgotpassform">
+	<div class="login">
+
+				Enter your email address and we'll send you your password.
+        <!--
+		<p>Your password is for your personal use only. Do NOT let anyone else use your password.
+		If more than one person uses the same password our system will automatically cancel your password.</p>-->
+
+<br clear="all"><br>
+
+		<p><label for="email">Email :</label><input type="text" name="username" id="login_email" class="form-control"></p>
+
+		<div class="clearboth"></div>
+
+		<div class="submit">
+		<input type="button" class="btn btn-default" value="&nbsp;Send My Password&nbsp;" onclick="fv_forgotpass();"></div>
+<br clear="all"><br>
+        <p><a href="#/" onclick="openlogin();">Login</a></p>
+
+       <p><a href="#/" onclick="openregister();">Not Registered? Click Here.</a></p>
+
+
+	</div>
+	</form>
+	</div>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn btn-danger">Cancel</a>
+
+        </div>
+      </div>
+    </div>
+</div>
+<!-- END MODAL FORGOTPASS -->
+
+
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1700616-1";
+urchinTracker();
+</script>
+<!---
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="https://s.sharethis.com/loader.js"></script>
+
+<script type="text/javascript">stLight.options({publisher: "97258bd7-9499-4c88-88d5-85e3c4cedeb4", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "97258bd7-9499-4c88-88d5-85e3c4cedeb4", "position": "right", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "email", "sharethis"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+-->
+
+<style>
+
+#sthoverbuttons{
+	text-align:left;
+	/* border: 1px solid red; */
+	padding:0;
+	padding-right:14px;
+
+}
+
+div#sthoverbuttonsMail.sthoverbuttonsMain-r{
+text-align:left;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+  </body>
+</html>
+
