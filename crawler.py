@@ -18,15 +18,12 @@ def normalize_link(url:str):
     return url
 
                    
-def parse_links(collections:[], num_links:int, seen:set(), divs:[str]):
+def parse_links(collections:[], seen:set(), divs:[str]):
     '''
     Parse links and update index.
     The divs passed in are the collection links.
-
-    TODO only pull links that are in the following categorie: 
     '''
 
-    links = []
     for d in divs:
         link = d.find('a')['href']
         
@@ -36,58 +33,56 @@ def parse_links(collections:[], num_links:int, seen:set(), divs:[str]):
                 seen.add(link)
                 collections.append(link)
 
-        if len(seen) >= num_links:
-            break
+        # if len(seen) >= num_links:
+        #     break
 
     # return links
 
 
 def main():
     # error checking
-    if len(sys.argv) < 2:
-        print("usage : python3 crawler.py <seed file> <number links>")
+    if len(sys.argv) < 1:
+        print("usage : python3 crawler.py <seed file>")
 
-    seeds, num_links = sys.argv[1], int(sys.argv[2])
+    seeds = sys.argv[1]
     user_agent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
     headers = {"User-Agent": user_agent}
 
     # get URL from file
     with open(seeds, 'r') as file:
         lines = file.readlines()
-        num_pages = lines[0].strip()
-        base_domain, start = lines[1].strip(), lines[2].strip()
+        num_pages = int(lines[0].strip())
+        base_domain, collections_url = lines[1].strip(), lines[2].strip()
 
     # get params for crawling 
     with open('params.json', 'r') as file:
         params = json.load(file)
 
     seen = set()
-    frontier = [start]
     collections = []
 
     # start_time = time.time()
     # start crawling using BFS 
     # want to store the links of the collections first,
     # then crawl the collections and grab the images off of them 
-    while frontier and len(seen) < num_links and params["page"] < num_pages:
-        url = frontier.pop(0)
-        
+    while params["page"] < num_pages:        
         # try-except block to catch timeouts
         try:
-            res = requests.get(url, headers=headers, params=params, timeout=5)
+            res = requests.get(collections_url, headers=headers, params=params, timeout=5)
             soup = BeautifulSoup(res.text, 'html.parser')
 
-            # update collections
+            # Update collections[] with urls to each collection.            
             if "text/html" in res.headers.get("Content-Type", ""):
-                parse_links(collections, num_links, seen,
+                parse_links(collections, seen,
                                     soup.find_all('div', class_='fresult'))
 
         except requests.Timeout:
-            print("Timeout occurred for URL:", url)
+            print("Timeout occurred for URL:", collections_url, params["page"])
 
         params["page"] += 1
+        print(f"iter {str(params["page"])}\n")
     
-    with open("collections.txt", 'w') as out:
+    with open("collections2.txt", 'w') as out:
         for c in collections:
             out.write(f"{base_domain}{c}\n")
 
